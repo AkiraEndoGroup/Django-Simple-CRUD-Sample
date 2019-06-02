@@ -6,7 +6,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">検索条件</h5>
+					<h5 class="modal-title">Search condition</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -17,18 +17,18 @@
 					</div>
 				</form>
 				<div class="modal-footer">
-					<a class="btn btn-outline-secondary" data-dismiss="modal">戻る</a>
-					<button type="submit" class="btn btn-outline-secondary" form="filter">検索</button>
+					<a class="btn btn-outline-secondary" data-dismiss="modal">Back</a>
+					<button type="submit" class="btn btn-outline-secondary" form="filter">Search</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-12">
-			<a class="btn btn-secondary filtered" style="visibility:hidden" href="/?page=1">検索を解除</a>
+			<a class="btn btn-secondary filtered" style="visibility:hidden" href="/?page=1">Clear filter</a>
 			<div class="float-right">
-				<a class="btn btn-outline-secondary" href="{% url 'create' %}">新規</a>
-				<a class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" href="#">検索</a>
+				<a class="btn btn-outline-secondary" href="{% url 'create' %}">Create</a>
+				<a class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" href="#">Search</a>
 			</div>
 		</div>
 	</div>
@@ -63,16 +63,16 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="float-right">
-								<a class="btn btn-outline-secondary " href="{% url 'detail' item.pk %}">詳細</a>
-								<a class="btn btn-outline-secondary " href="{% url 'update' item.pk %}">編集</a>
-								<a class="btn btn-outline-secondary " href="{% url 'delete' item.pk %}">削除</a>
+								<a class="btn btn-outline-secondary " href="{% url 'detail' item.pk %}">Detail</a>
+								<a class="btn btn-outline-secondary " href="{% url 'update' item.pk %}">Edit</a>
+								<a class="btn btn-outline-secondary " href="{% url 'delete' item.pk %}">Delete</a>
 							</div>
 						</div>
 					</div>
 				</li>
 				{% empty %}
 				<li class="list-group-item">
-					対象のデータがありません
+					 Data not found
 				</li>
 				{% endfor %}
 			</ul>
@@ -81,8 +81,8 @@
 	<div class="row" >
 		<div class="col-12">
 			<div class="float-right">
-				<a class="btn btn-outline-secondary" href="{% url 'create' %}">新規</a>
-				<a class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" href="#">検索</a>
+				<a class="btn btn-outline-secondary" href="{% url 'create' %}">Create</a>
+				<a class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" href="#">Search</a>
 			</div>
 		</div>
 	</div>
